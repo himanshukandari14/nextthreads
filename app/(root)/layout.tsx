@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={`${inter.className} text-white`}>
           <NavbarDemo />
           <main className="flex bg-yellow-500 h-screen">
             <LeftSidebar />
-            <section className="flex-grow bg-yellow-800 ml-[15%] mr-[18%] p-4">
+            <section className="flex-grow bg-yellow-800 ml-[15%] mr-[18%] mt-[68px] p-4">
               {children}
             </section>
             <RightSidebar />
